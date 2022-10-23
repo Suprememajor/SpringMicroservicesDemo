@@ -10,12 +10,13 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.ComponentScan;
 
 import javax.sql.DataSource;
 
 @SpringBootApplication
 @EnableDiscoveryClient
-//@ComponentScan(useDefaultFilters = false)
+@ComponentScan(useDefaultFilters = false)
 public class AccountServer {
     private static final Logger log = LoggerFactory.getLogger(AccountServer.class);
 
